@@ -1,0 +1,7 @@
+apt-get install htop
+apt-get install speedometer
+apt-get install nload
+apt-get install iftop
+apt-get install tcptrack
+apt-get install nvstat
+apt-get install wajig

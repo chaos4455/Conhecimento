@@ -1,0 +1,3 @@
+instalar lib modifica vm
+
+apt-get install libguestfs-tools
