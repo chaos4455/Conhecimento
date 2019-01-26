@@ -1,0 +1,4 @@
+choco install jdk8
+
+choco install nodejs.install
+
