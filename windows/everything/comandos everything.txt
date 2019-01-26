@@ -1,0 +1,5 @@
+C:\Program Files\Everything\Everything.exe -read-only -db C:\Users\user\AppData\Local\Everything\Everything.db
+
+
+
+C:\Program Files\Everything\Everything.exe -read-only -db Everything.db
