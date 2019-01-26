@@ -1,0 +1,8 @@
+install pypi anaconda for docker 
+
+pip install docker
+
+
+https://pypi.org/project/docker/
+
+
