@@ -1,1 +1,12 @@
-mstsc /v:216.244.95.173
+<#	
+	.NOTES
+	===========================================================================
+	 Created with: 	Virtual Studio Code
+	 Created on:   	26/01/2019 21:31
+	 Created by:   	Chaos4455 	
+	===========================================================================
+	.DESCRIÇÃO
+		Este arquivo possui um exemplo de como executar uma chamada de área de trabalho remota RDP mstsc via powershell ou via CMD
+#>
+
+mstsc /v:10.10.10.10

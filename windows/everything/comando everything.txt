@@ -1,1 +1,12 @@
+<#	
+	.NOTES
+	===========================================================================
+	 Created with: 	Virtual Studio Code
+	 Created on:   	26/01/2019 21:31
+	 Created by:   	Chaos4455 	
+	===========================================================================
+	.DESCRIÇÃO
+		Este arquivo possui referencia de como executar a conversão de um arquivo everything.db para um arquivo .efu usando a ferramenta db2efu.exe
+#>
+
 db2efu.exe <Everything.db> <out.efu>

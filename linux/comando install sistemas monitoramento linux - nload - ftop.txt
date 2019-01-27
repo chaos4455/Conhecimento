@@ -1,2 +1,13 @@
+<#	
+	.NOTES
+	===========================================================================
+	 Created with: 	Virtual Studio Code
+	 Created on:   	26/01/2019 21:31
+	 Created by:   	Chaos4455 	
+	===========================================================================
+	.DESCRIÇÃO
+		Este arquivo possui instruções de como executar a instalação de dois sistemas de monitoramento de rede - nload e iftop em ambiente debian
+#>
+
 apt-get install nload
 apt-get install iftop
