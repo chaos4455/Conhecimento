@@ -25,3 +25,4 @@ def on_resize(width, height):
     glMatrixMode(gl.GL_MODELVIEW)    
 
 pyglet.app.run()
+#Teste
