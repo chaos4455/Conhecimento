@@ -1,6 +1,6 @@
 ![](http://www.techproenterprise.com/wp-content/uploads/2016/05/headerbackground.png)
 
-Compartilhando conhecimento com em um misto de cultura DEVOPS e WAREZ
+Compartilhando conhecimento  em um misto de cultura DEVOPS e WAREZ
 Repositório de comandos, tutoriais, arquivos de informação  e comandlets usados por mim no dia a dia e que foram acumulado ao longo dos anos.
 
 Meu objetivo é tornar fácil para mim e para quem servir ou achar útil os arquivos que aqui estão dispostos. :-)
