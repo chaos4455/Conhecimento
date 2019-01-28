@@ -11,9 +11,9 @@ Elias Andrade - 2019
 
 - Meu objetivo é publicar aqui tudo que eu tiver produzido de conhecimento ou obtido de informação e que considero útil para mim e para outras pessoas.
 
-###Não há conhecimento que não seja power
+###Não há conhecimento que não seja poder
 
-![](https://res.cloudinary.com/teepublic/image/private/s--veX3Jwgo--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1522617951/production/designs/2549460_0.jpg)
+![](https://steamusercontent-a.akamaihd.net/ugc/713035001753474891/BA4BBB13C168079078A501521AF9501D1909B059/)
 
 ###The matrix has you, neo!!!
 
