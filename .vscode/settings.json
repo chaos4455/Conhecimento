@@ -1,0 +1,9 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#221E7A",
+        "titleBar.activeBackground": "#302AAA",
+        "titleBar.activeForeground": "#FCFCFE"
+    },
+    "python.linting.pylintEnabled": true,
+    "python.pythonPath": "C:\\Users\\2018\\AppData\\Local\\Programs\\Python\\Python36-32\\python.exe"
+}
