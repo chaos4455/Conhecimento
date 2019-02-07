@@ -9,7 +9,7 @@
 		Este arquivo mostra como realizar a troca remota de senha no windows com o PSTOOLs e PSPASSWD
 #>
 #Dentro do CMD
-#Navegue atré a pasta do pstools
+#Navegue até a pasta do pstools
 #Exemplo: cd c:\pstools
 #Dentro da pasta execute o seguinte comando:
 pspasswd \\NomeDoComputador NomeDoUsuario "NovaSenha"
