@@ -7,7 +7,7 @@ Meu objetivo é tornar fácil para mim e para quem servir ou achar útil os arqu
 
 Valeu!!!
 
-Acomulando conhecimento.... Hora de compartilhar!!!
+Acumulando conhecimento.... Hora de compartilhar!!!
 
 Elias Andrade - 2019
 
