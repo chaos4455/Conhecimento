@@ -30,3 +30,6 @@ Cultura DEVOPS
 
 
 
+<p align="center">
+  <img width="1024" height="768" src="https://66.media.tumblr.com/46eb17b36b729413d831aed40be4f346/tumblr_nzz9beO66W1u77be0o1_500.gif">
+</p>
