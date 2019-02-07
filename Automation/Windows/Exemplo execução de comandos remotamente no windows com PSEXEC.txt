@@ -6,6 +6,6 @@
 	 Created by:   	Chaos4455 	
 	===========================================================================
 	DESCRIÇÃO
-		Este arquivo possui um xemplo de comando para executar o comando ipconfig em um computador remoto com o usuário e senha especificada
+		Este arquivo possui um exemplo de comando para executar o comando ipconfig em um computador remoto com o usuário e senha especificada
 #>
 PSEXEC \\HOSTNAMEDOCOMPUTADOR ipconfig -u USUARIO -p SENHA
