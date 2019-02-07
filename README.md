@@ -15,7 +15,7 @@ Elias Andrade - 2019
 
 Não há conhecimento que não seja poder
 <p align="center">
-  <img width="500" height="132" src="https://steamusercontent-a.akamaihd.net/ugc/713035001753474891/BA4BBB13C168079078A501521AF9501D1909B059/">
+  <img width="132" height="552" src="https://steamusercontent-a.akamaihd.net/ugc/713035001753474891/BA4BBB13C168079078A501521AF9501D1909B059/">
 </p>
 
 The matrix has you, neo!!!
