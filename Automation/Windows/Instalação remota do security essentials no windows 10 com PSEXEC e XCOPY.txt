@@ -1,0 +1,17 @@
+<#	
+	NOTES
+	===========================================================================
+	 Created with: 	Virtual Studio Code
+	 Created on:   	06/02/2019 23:37
+	 Created by:   	Chaos4455 	
+	===========================================================================
+	DESCRIÇÃO
+		Este arquivo mostra como realizar instalação remota do microsoft security essentials no windows 10 com PSTOOLS e PSEXEC
+#>
+#Faça download dos arquivos de instalação no site da microsoft
+#Mova os arquivos de um computador ou servidor para o computador onde será executada a instalação
+PSEXEC \\DESTINO xcopy  \\SERVIDORDEARQUIVOS\Arquivos\MICROSOFTSECURITYESSENTIALS\* c:\Windows\temp /Y
+
+#Neste exemplo os comandos abaixo executam uma instalação caso o sistema seja de 32 bits e outra caso seja de 64
+PSEXEC \\DESTINO  c:\Windows\temp\mpam-fex3210 /Y /S
+PSEXEC \\DESTINO  c:\Windows\temp\mpam-fex6410 /Y /S

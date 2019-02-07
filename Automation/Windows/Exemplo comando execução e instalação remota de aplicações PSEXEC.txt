@@ -1,0 +1,13 @@
+<#	
+	NOTES
+	===========================================================================
+	 Created with: 	Virtual Studio Code
+	 Created on:   	06/02/2019 23:37
+	 Created by:   	Chaos4455 	
+	===========================================================================
+	DESCRIÇÃO
+		Este comando mostra como executar remotamente a instalação de um programa com PSEXEC
+#>
+#Os arguemntos /Y avança qualquer prompt da instaçaão e o comando /S executa a instalação em modo silêncioso
+#Neste exemplo o comando chama a instalação remota e silenciosa do microsoft security essentials
+PSEXEC \\COMPUTADOR  c:\Windows\temp\MSEInstall32.exe /Y /S

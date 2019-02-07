@@ -1,0 +1,15 @@
+<#	
+	NOTES
+	===========================================================================
+	 Created with: 	Virtual Studio Code
+	 Created on:   	06/02/2019 23:37
+	 Created by:   	Chaos4455 	
+	===========================================================================
+	DESCRIÇÃO
+		Este arquivo mostra como realizar a troca remota de senha no windows com o PSTOOLs e PSPASSWD
+#>
+#Dentro do CMD
+#Navegue atré a pasta do pstools
+#Exemplo: cd c:\pstools
+#Dentro da pasta execute o seguinte comando:
+pspasswd \\NomeDoComputador NomeDoUsuario "NovaSenha"

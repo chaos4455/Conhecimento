@@ -1,0 +1,11 @@
+<#	
+	NOTES
+	===========================================================================
+	 Created with: 	Virtual Studio Code
+	 Created on:   	06/02/2019 23:37
+	 Created by:   	Chaos4455 	
+	===========================================================================
+	DESCRIÇÃO
+		Este comando realiza a listagem e exibição de um inventário completo de hardware e sistema operacional do computador
+#>
+inxi -Fx

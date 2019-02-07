@@ -1,0 +1,13 @@
+<#	
+	NOTES
+	===========================================================================
+	 Created with: 	Virtual Studio Code
+	 Created on:   	06/02/2019 23:37
+	 Created by:   	Chaos4455 	
+	===========================================================================
+	DESCRIÇÃO
+		Este arquivo mostra como executar a instalação do REMMINA cliente de acesso RDP para linux
+#>
+sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
+sudo apt-get update
+sudo apt-get install remmina remmina-plugin-rdp libfreerdp-plugins-standard
