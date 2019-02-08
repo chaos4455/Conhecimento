@@ -1,0 +1,2 @@
+#Exemplo de como executar a instalação remota de um programa em um diretório de rede via PSEXEC
+PSEXEC -u administrador -p Senha \\Computador -s \\10.1.1.1\Arquivos\AV\UPDATES\InstaladorMicrosoftSecurityEssentialsx64.exe /Y /S

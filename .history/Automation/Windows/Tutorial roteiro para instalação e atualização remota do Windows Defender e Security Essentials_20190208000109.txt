@@ -1,0 +1,18 @@
+#Todos os comandos devem ser executados em sequência
+#Executa o cmd remoto internamente no host remoto
+PSEXEC -u administrador -p Senha \\Cliente -s cmd
+
+
+#Execute apenas um dos comandos para fazer a cópia do arquivo. Fique livre para escolher entre o ROBOCOPY ou XCOPY
+
+#Copia arquivos remotos com o ROBOCOPY
+#Pode ser executado diretamente do computador ou através do CMD remoto
+ROBOCOPY "\\10.10.10.10\arquivos\ANTIVIRUS\*" "c:\InstalaçãoAV" /MIR
+
+#Copia arquivos remotos com o XCOPY através de uma chamada PSEXEC
+PSEXEC \\cliente xcopy  \\10.10.10.10\Arquivos\AV\UPDATES\* c:\Windows\temp /Y
+PSEXEC \\Cliente xcopy  \\10.10.10.10\Arquivos\AV\instaladores\* c:\Windows\temp /Y
+
+
+#Exemplo de como executar a instalação remota do AV ou fazer a atualização, basta trocar o pacote.exe
+PSEXEC -u administrador -p Senha \\DESKTOP-17BCSS3 -s \\192.168.0.58\Arquivos\AV\UPDATES\mpam-fex6410.exe /Y /S

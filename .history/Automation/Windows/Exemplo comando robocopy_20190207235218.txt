@@ -1,0 +1,2 @@
+#Copia arquivos remotos
+ROBOCOPY "\\10.10.197.197\arquivos\pstools\psexec.exe" "c:\local" /MIR

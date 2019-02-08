@@ -1,0 +1,4 @@
+#Todos os comandos devem ser executados em sequência
+#Executa o cmd remoto internamente no host remoto
+PSEXEC -u administrador -p Senha \\Cliente -s cmd
+

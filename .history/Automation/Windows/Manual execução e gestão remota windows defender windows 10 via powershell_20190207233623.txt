@@ -1,0 +1,5 @@
+caminho do windows DEFENDER NO REGISTRO DO WINDOWS 10
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender
+
+Comando para obter ajuda completa sobre o módulo defender no powershell do windows 10
+PS C:\Windows\Temp> GET-COMMAND -MODULE DEFENDER

@@ -1,0 +1,2 @@
+#Executa o cmd remoto internamente no host remoto
+PSEXEC -u administrador -p Med@2018! \\DESKTOP-17BCSS3 -s cmd

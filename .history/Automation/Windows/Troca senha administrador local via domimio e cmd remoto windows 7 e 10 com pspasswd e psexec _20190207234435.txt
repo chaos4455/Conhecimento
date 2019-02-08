@@ -1,0 +1,1 @@
+pspasswd \\meucomputador -u seu.usuario@empresa.filial1.local -p senhadoAD Administrator Med@2018!

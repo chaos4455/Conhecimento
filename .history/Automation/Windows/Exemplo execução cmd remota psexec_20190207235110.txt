@@ -1,0 +1,3 @@
+#Executa o cmd remoto em um host remoto 
+#CMD é o comando em questão, mas pode ser qualquer outro, comando ou arquivo
+PSEXEC -u administrador -p Senha \\Computador -s cmd

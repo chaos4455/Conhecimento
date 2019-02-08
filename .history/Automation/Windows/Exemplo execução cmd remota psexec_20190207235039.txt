@@ -1,0 +1,2 @@
+#Executa o cmd remoto em um host remoto
+PSEXEC -u administrador -p Senha \\Computador -s cmd

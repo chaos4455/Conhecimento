@@ -1,0 +1,35 @@
+#caminho do windows DEFENDER NO REGISTRO DO WINDOWS 10
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender
+
+#Comando para obter ajuda completa sobre o módulo defender no powershell do windows 10
+PS C:\Windows\Temp> GET-COMMAND -MODULE DEFENDER
+
+"""
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Function        Add-MpPreference                                   1.0        DEFENDER
+Function        Get-MpComputerStatus                               1.0        DEFENDER
+Function        Get-MpPreference                                   1.0        DEFENDER
+Function        Get-MpThreat                                       1.0        DEFENDER
+Function        Get-MpThreatCatalog                                1.0        DEFENDER
+Function        Get-MpThreatDetection                              1.0        DEFENDER
+Function        Remove-MpPreference                                1.0        DEFENDER
+Function        Remove-MpThreat                                    1.0        DEFENDER
+Function        Set-MpPreference                                   1.0        DEFENDER
+Function        Start-MpScan                                       1.0        DEFENDER
+Function        Start-MpWDOScan                                    1.0        DEFENDER
+Function        Update-MpSignature                                 1.0        DEFENDER
+
+"""
+
+#Comandos de administração do windows defender no windows 10 
+
+#EXECUTA SCAN REMOTO 
+Start-MpScan
+
+#ATUALIZA VERSÃO 
+Update-MpSignature 
+
+#VALIDA VERSÃO E STATUS  
+Get-MpComputerStatus

@@ -1,0 +1,1 @@
+PSEXEC \\med-suporte -s cmd

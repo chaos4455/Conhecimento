@@ -1,0 +1,16 @@
+#Todos os comandos devem ser executados em sequência
+#Executa o cmd remoto internamente no host remoto
+PSEXEC -u administrador -p Senha \\Cliente -s cmd
+
+
+#Execute apenas um dos comandos para fazer a cópia do arquivo. Fique livre para escolher entre o ROBOCOPY ou XCOPY
+
+#Copia arquivos remotos com o ROBOCOPY
+#Pode ser executado diretamente do computador ou através do CMD remoto
+ROBOCOPY "\\192.168.0.58\arquivos\ANTIVIRUS\*" "c:\InstalaçãoAV" /MIR
+
+#Copia arquivos remotos com o XCOPY através de uma chamada PSEXEC
+PSEXEC \\DESKTOP-17BCSS3 xcopy  \\192.168.0.58\Arquivos\AV\UPDATES\* c:\Windows\temp /Y
+PSEXEC \\DESKTOP-17BCSS3 xcopy  \\192.168.0.58\Arquivos\AV\instaladores\* c:\Windows\temp /Y
+
+

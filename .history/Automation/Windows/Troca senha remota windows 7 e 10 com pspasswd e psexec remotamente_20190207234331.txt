@@ -1,0 +1,1 @@
+pspasswd \\DESKTOP-17BCSS3 -u elias.andrade@medicinal.intranet.local -p Femsa@2018 Administrator Med@2018!

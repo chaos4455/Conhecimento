@@ -1,0 +1,2 @@
+caminho do windows DEFENDER NO REGISTRO DOWINDOWS 10
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender

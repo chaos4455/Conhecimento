@@ -1,0 +1,3 @@
+#Copia arquivos remotos de um compartilhamento para um diretório local ou de um host remoto
+ROBOCOPY "\\10.10.10.197\arquivos\pstools\psexec.exe" "c:\local" /MIR
+ROBOCOPY "\\10.10.10.197\arquivos\pstools\psexec.exe" "\\10.10.10.197\arquivos\pstools\psexec.exe" /MIR

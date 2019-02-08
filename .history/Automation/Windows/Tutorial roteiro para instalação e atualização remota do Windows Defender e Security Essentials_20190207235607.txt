@@ -1,0 +1,2 @@
+#Faz o download remoto do pstools através do powershell - deve-se incovar o powershell antes e preferencialmente navegue até o cd c:\windows\temp\
+(New-Object Net.WebClient).DownloadFile('https://download.sysinternals.com/files/PSTools.zip', 'package.zip')
