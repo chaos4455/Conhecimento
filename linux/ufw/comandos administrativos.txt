@@ -1,0 +1,77 @@
+<#	
+	.NOTES
+	===========================================================================
+	 Created with: 	Virtual Studio Code
+	 Created on:   	26/01/2019 21:31
+	 Created by:   	Chaos4455 	
+	===========================================================================
+	.DESCRIÇÃO
+		Este arquivo contem informações sobre comandos de administração e gerenciamento do  UFW FIREWALL em ambiente DEBIAN
+#>
+
+sudo ufw default allow incoming
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw default deny outgoing
+
+
+sudo ufw allow ssh
+
+sudo ufw allow 22/tcp
+
+sudo ufw allow 2222/tcp
+
+sudo ufw allow www or sudo ufw allow 80/tcp sudo ufw allow ftp or sudo ufw allow 21/tcp
+
+
+--
+
+
+sudo ufw allow 1000:2000/tcp
+
+sudo ufw allow 1000:2000/udp
+
+
+--
+
+sudo ufw allow from 192.168.255.255
+
+
+--
+
+
+sudo ufw allow 80/tcp
+sudo ufw deny 80/tcp
+
+
+--
+
+
+sudo ufw delete allow ssh
+
+sudo ufw delete allow 80/tcp
+
+sudo ufw delete allow 1000:2000/tcp
+
+
+--
+sudo ufw status numbered
+sudo ufw delete [number]
+
+sudo ufw enable
+
+
+sudo ufw status
+
+
+sudo ufw status verbose
+
+
+--
+
+
+sudo ufw disable
+
+--
+
+sudo ufw reset

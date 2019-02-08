@@ -1,0 +1,27 @@
+<#	
+	.NOTES
+	===========================================================================
+	 Created with: 	Virtual Studio Code
+	 Created on:   	26/01/2019 21:31
+	 Created by:   	Chaos4455 	
+	===========================================================================
+	.DESCRIÇÃO
+		Este arquivo possui informações sobre como executar a instalação do UFW FIREWALL e gerenciar seus serviços
+#>
+
+comandos
+
+apt-get install ufw
+
+sudo ufw status
+
+ufw reload
+
+ufw stop
+
+ufw start
+
+
+sudo ufw disable
+
+sudo ufw enable

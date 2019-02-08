@@ -1,0 +1,190 @@
+<#	
+	.NOTES
+	===========================================================================
+	 Created with: 	Virtual Studio Code
+	 Created on:   	26/01/2019 21:31
+	 Created by:   	Chaos4455 	
+	===========================================================================
+	.DESCRIÇÃO
+		Este arquivo possui uma lista, ainda não organizada de forma correta, com comandos de administração e execução de chamadas de serviços, processos e ferramentas em ambiente windows 7
+#>
+
+Description	Run Command
+Accessibility Options	utilman
+or
+control access.cpl
+Add Hardware Wizard	hdwwiz
+Programs and Features
+(Add New Programs)
+(Add Remove Windows Components)
+(Set Program Access & Defaults )	appwiz.cpl
+control appwiz.cpl,,1
+control appwiz.cpl,,2
+control appwiz.cpl,,3
+Administrative Tools	control admintools
+Advanced User Accounts Control Panel	netplwiz
+Authorization Manager	azman.msc
+Automatic Update	control wuaucpl.cpl
+Backup and Restore Utility	sdclt
+Bluetooth Transfer Wizard	fsquirt
+Calculator	calc
+Certificate Manager	certmgr.msc
+Character Map	charmap
+Check Disk Utility	chkdsk
+Clear Type (tune or turn off)	cttune
+Color Management	colorcpl.exe
+Command Prompt	cmd
+Component Services	dcomcnfg
+or
+comexp.msc
+Computer Management	CompMgmtLauncher.exe
+or 
+compmgmt.msc
+Control Panel	control
+Credential (passwords) Backup and Restore Wizard	credwiz
+Data Execution Prevention	SystemPropertiesDataExecutionPrevention
+Date and Time Properties	timedate.cpl
+Device Manager	hdwwiz
+or
+devmgmt.msc
+Device Pairing Wizard	DevicePairingWizard
+Digitizer Calibration Tool (Tablets/Touch screens)	tabcal
+Direct X Control Panel (if installed)	directx.cpl
+Direct X Troubleshooter	dxdiag
+Disk Cleanup Utility	cleanmgr
+Disk Defragmenter	dfrgui
+defrag
+Disk Management	diskmgmt.msc
+Disk Partition Manager	diskpart
+Display Color Calibration	dccw
+Display DPI / Text size	dpiscaling
+Display Properties (Themes, Desktop, Screensaver)	control desktop
+Display Properties (Resolution, Orientation)	desk.cpl
+Display Properties (Color & Appearance)	control color
+Documents (open 'My Documents' folder)	documents
+Downloads (open 'Downloads' folder)	downloads
+Driver Verifier Utility	verifier
+DVD Player	dvdplay
+Edit Environment Variables	rundll32.exe sysdm.cpl,EditEnvironmentVariables
+Encrypting File System Wizard (EFS)	rekeywiz
+Event Viewer	eventvwr.msc
+File Signature Verification Tool (Device drivers)	sigverif
+Files and Settings Transfer Tool	%systemroot%\system32\migwiz\migwiz.exe
+Firewall Control Panel	firewall.cpl
+Folders Properties	control folders
+Fonts list
+control fonts
+Font preview	fontview arial.ttf
+Game Controllers	joy.cpl
+Local Group Policy Editor	gpedit.msc
+Internet Properties	inetcpl.cpl
+IP Configuration	ipconfig
+iSCSI Initiator configuration	iscsicpl
+Keyboard Properties	control keyboard
+Language Pack Installer	lpksetup
+Local Security Policy	secpol.msc
+Local Users and Groups	lusrmgr.msc
+Log out	logoff
+Microsoft Malicious Software Removal Tool	mrt
+Microsoft Management Console	mmc
+Access (Microsoft Office)	msaccess
+Excel (Microsoft Office)	Excel
+Powerpoint (Microsoft Office)	powerpnt
+Word (Microsoft Office)	winword
+Microsoft Paint	mspaint
+Microsoft Support Diagnostic Tool	msdt
+Mouse Properties	control mouse
+or 
+main.cpl
+Network Connections	control netconnections
+or 
+ncpa.cpl
+Projector:
+Connect to Network Projector
+Switch projector display	netproj
+
+displayswitch
+Notepad	notepad
+ODBC Data Source Admin
+Default ODBC driver:
+32-bit ODBC driver under 64-bit platform:
+
+C:\windows\system32\odbcad32.exe
+C:\windows\sysWOW64\odbcad32.exe
+ODBC configuration - Install/configure MDAC drivers	odbcconf
+On Screen Keyboard	osk
+OOB Getting Started	gettingstarted
+Password - Create a Windows Password Reset Disk (USB)	"C:\Windows\system32\rundll32.exe" keymgr.dll,PRShowSaveWizardExW
+Pen and Touch (Tablet/Pen input configuration)	tabletpc.cpl
+Performance Monitor	perfmon.msc
+Phone and Modem Options	telephon.cpl
+Phone Dialer	dialer
+Power Configuration	powercfg.cpl and powercfg.exe
+Presentation Settings	PresentationSettings
+Problem Steps Recorder	psr
+Program Access and Computer Defaults - browser / email / media	computerdefaults
+Printers and Faxes	control printers
+Print Management (.msc)	PrintManagement
+Printer Migration (backup/restore)	printbrmui and printbrm.exe
+Printer user interface (List all printui.dll options)	printui
+Private Character Editor	eudcedit
+Regional Settings - Language, Date/Time format, keyboard locale.	intl.cpl
+Registry Editor	regedit
+Remote Assistance	msra
+Remote Desktop	mstsc
+Resource Monitor	resmon
+Resultant Set of Policy	rsop.msc
+Settings (Windows 10)	ms-settings:
+Scheduled Tasks	control schedtasks
+Screenshot Snipping Tool	snippingtool
+Security Center	wscui.cpl
+Services	services.msc
+Shared Folder Wizard	shrpubw
+Shared Folders	fsmgmt.msc
+Shut Down Windows	shutdown
+Software Licensing/Activation	slui
+Sounds and Audio	mmsys.cpl
+Sound Recorder	soundrecorder
+Sound Volume	sndvol
+Syncronization Tool (Offline files)	mobsync
+System Configuration Utility	msconfig
+System File Checker Utility (Scan/Purge)	sfc
+System Information	msinfo32
+System Properties
+sysdm.cpl SystemProperties
+or
+sysdm.cpl DisplaySYSDMCPL
+System Properties - Performance	SystemPropertiesPerformance
+System Properties - Hardware	SystemPropertiesHardware
+System Properties - Advanced	SystemPropertiesAdvanced
+System Repair - Create a System Repair Disc	recdisc
+System Restore	rstrui
+Task Manager	taskmgr
+Task Scheduler	taskschd.msc
+Telnet Client	telnet
+Trusted Platform Module Initialization Wizard	tpmInit
+
+User Accounts (Autologon)	control userpasswords2
+User Account Control (UAC) Settings	UserAccountControlSettings
+User Profiles - Edit/Change type	C:\Windows\System32\rundll32.exe sysdm.cpl,EditUserProfiles
+Windows Disc Image Burning Tool	isoburn C:\movies\madmax.iso
+Windows Explorer	explorer
+Windows Features	optionalfeatures
+Windows Firewall 
+Windows Firewall with Advanced Security	firewall.cpl
+wf.msc
+Windows Image Acquisition (scanner)	wiaacmgr
+Windows Magnifier	magnify
+Windows Management Infrastructure	wmimgmt.msc
+Windows Memory Diagnostic Scheduler	mdsched
+Windows Mobility Center (Mobile PCs only)	mblctr
+Windows PowerShell	powershell
+Windows PowerShell ISE	powershell_ise
+Windows Security Action Center	wscui.cpl
+Windows Script Host(VBScript)	wscript NAME_OF_SCRIPT.VBS
+Windows System Security Tool. Encrypt the SAM database.
+(boot password.)	syskey
+Windows Update	wuapp
+Windows Update Standalone Installer	wusa
+Windows Version (About Windows)	winver
+WordPad	write

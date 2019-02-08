@@ -1,0 +1,120 @@
+<#	
+	.NOTES
+	===========================================================================
+	 Created with: 	Virtual Studio Code
+	 Created on:   	26/01/2019 21:31
+	 Created by:   	Chaos4455 	
+	===========================================================================
+	.DESCRIÇÃO
+		Este arquivo possui uma lista de comandos shell que podem ser executados via chamadas CMD e-ou powershell
+#>
+
+Shell Command                       Description
+#########################################################################################################################
+#########################################################################################################################
+shell:AccountPictures               Account Pictures
+shell:AddNewProgramsFolder          The "Get Programs" Control panel item
+shell:Administrative Tools          Administrative Tools
+shell:AppData                       Same as %appdata%, the c:\user\<username>\appdata\roaming folder
+shell:Application Shortcuts         Opens the folder which stores all Modern apps shortcuts
+shell:AppsFolder                    The virtual folder which stores all installed Modern apps
+shell:AppUpdatesFolder              The "Installed Updates" Control panel item
+shell:Cache                         IE's cache folder (Temporary Internet Files)
+shell:CD Burning                    Temporary Burn Folder
+shell:ChangeRemoveProgramsFolder    The "Uninstall a program" Control panel item
+shell:Common Administrative Tools   The Administrative Tools folder for all users
+shell:Common AppData                The C:\ProgramData folder (%ProgramData%)
+shell:Common Desktop                Public Desktop
+shell:Common Documents              Public Documents
+shell:Common Programs               All Users Programs, which are part of Start menu. Still used by the Start screen
+shell:Common Start Menu             All Users Start Menu folder, same as above
+shell:Common Startup                The Startup folder, used for all users
+shell:Common Templates              Same as above, but used for new documents templates, e.g. by Microsoft Office
+shell:CommonDownloads               Public Downloads
+shell:CommonMusic                   Public Music
+shell:CommonPictures                Public Pictures
+shell:CommonRingtones               Public Ringtones folder
+shell:CommonVideo                   Public Videos
+shell:ConflictFolder                The Control Panel\All Control Panel Items\Sync Center\Conflicts item
+shell:ConnectionsFolder            The Control Panel\All Control Panel Items\Network Connections item
+shell:Contacts                      Contacts folder (Address book)
+shell:ControlPanelFolder           Control Panel
+shell:Cookies                       The folder with IE's cookies
+shell:CredentialManager            C:\Users\<username>\AppData\Roaming\Microsoft\Credentials
+shell:CryptoKeys                   C:\Users\<username>\AppData\Roaming\Microsoft\Crypto
+shell:CSCFolder                    This folder is broken in Windows 8/7, provides access to the Offline files item
+shell:Desktop                       Desktop
+shell:Device Metadata Store         C:\ProgramData\Microsoft\Windows\DeviceMetadataStore
+shell:DocumentsLibrary              Documents Library
+shell:Downloads                    Downloads folder
+shell:DpapiKeys                    C:\Users\<username>\AppData\Roaming\Microsoft\Protect
+shell:Favorites                    Favorites
+shell:Fonts                         C:\Windows\Fonts
+shell:Games                         The Games Explorer item
+shell:GameTasks                    C:\Users\<username>\AppData\Local\Microsoft\Windows\GameExplorer
+shell:History                       C:\Users\<username>\AppData\Local\Microsoft\Windows\History, IE's browsing history
+shell:HomeGroupCurrentUserFolder    The Home Group folder for the current user
+shell:HomeGroupFolder               The Home Group root folder
+shell:ImplicitAppShortcuts         C:\Users\<username>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\ImplicitAppShortcuts
+shell:InternetFolder                This shell command will start Internet Explorer
+shell:Libraries                    Libraries
+shell:Links                         The "Favorites" folder from the Explorer navigation pane.
+shell:Local AppData                 C:\Users\<username>\AppData\Local
+shell:LocalAppDataLow               C:\Users\<username>\AppData\LocalLow
+shell:LocalizedResourcesDir         This shell folder is broken in Windows 8
+shell:MAPIFolder                   Represents the Microsoft Outlook folder
+shell:MusicLibrary                 Music Library
+shell:My Music                      The "My Music" folder (not the Library)
+shell:My Pictures                  The "My Pictures" folder (not the Library)
+shell:My Video                      The "My Videos" folder (not the Library)
+shell:MyComputerFolder              Computer/Drives view
+shell:NetHood                       C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Network Shortcuts
+shell:NetworkPlacesFolder          The Network Places folder which shows computers and devices on your network
+shell:OEM Links                    This shell command does nothing on my Windows 8 Retail edition. Maybe it works with OEM Windows 8 editions.
+shell:Original Images               Not functional on Windows 8
+shell:Personal                      The "My Documents" folder (not the Library)
+shell:PhotoAlbums                  Saved slideshows, seems to have not been implemented yet
+shell:PicturesLibrary               Pictures Library
+shell:Playlists                    Stores WMP Playlists.
+shell:PrintersFolder                The classic "Printers" folder (not 'Devices and Printers')
+shell:PrintHood                    C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Printer Shortcuts
+shell:Profile                       The User profile folder
+shell:ProgramFiles                 Program Files
+shell:ProgramFilesCommon           C:\Program Files\Common Files
+shell:ProgramFilesCommonX86         C:\Program Files (x86)\Common Files - for Windows x64
+shell:ProgramFilesX86               C:\Program Files (x86) - for Windows x64
+shell:Programs                      C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs (Per-user Start Menu Programs folder)
+shell:Public                        C:\Users\Public
+shell:PublicAccountPictures         C:\Users\Public\AccountPictures
+shell:PublicGameTasks               C:\ProgramData\Microsoft\Windows\GameExplorer
+shell:PublicLibraries               C:\Users\Public\Libraries
+shell:Quick Launch                 C:\Users\<username>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch
+shell:Recent                        The "Recent Items" folder (Recent Documents)
+shell:RecordedTVLibrary            The "Recorded TV" Library
+shell:RecycleBinFolder              Recycle Bin
+shell:ResourceDir                  C:\Windows\Resources where visual styles are stored
+shell:Ringtones                    C:\Users\<username>\AppData\Local\Microsoft\Windows\Ringtones
+shell:Roamed Tile Images           Is not implemented yet. Reserved for future.
+shell:Roaming Tiles                 C:\Users\<username>\AppData\Local\Microsoft\Windows\RoamingTiles
+shell:SavedGames                   Saved Games
+shell:Screenshots                  The folder for Win+Print Screen screenshots
+shell:Searches                      Saved Searches
+shell:SearchHomeFolder              Windows Search UI
+shell:SendTo                        The folder with items that you can see in the "Send to" menu
+shell:Start Menu                   C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu (Per-user Start Menu folder)
+shell:Startup                       Per-user Startup folder
+shell:SyncCenterFolder             Control Panel\All Control Panel Items\Sync Center
+shell:SyncResultsFolder            Control Panel\All Control Panel Items\Sync Center\Sync Results
+shell:SyncSetupFolder               Control Panel\All Control Panel Items\Sync Center\Sync Setup
+shell:System                        C:\Windows\System32
+shell:SystemCertificates           C:\Users\<username>\AppData\Roaming\Microsoft\SystemCertificates
+shell:SystemX86                    C:\Windows\SysWOW64 -Windows x64 only
+shell:Templates                    C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Templates
+shell:User Pinned                  Pinned items for Taskbar and Start screen, C:\Users\<username>\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned
+shell:UserProfiles                 C:\Users, the users folder where the user profiles are stored
+shell:UserProgramFiles              Not implemented yet. Reserved for future.
+shell:UserProgramFilesCommon        same as above
+shell:UsersFilesFolder              The current user profile
+shell:UsersLibrariesFolder         Libraries
+shell:VideosLibrary                 Videos Library
+shell:Windows                       C:\Windows

@@ -1,0 +1,12 @@
+<#	
+	.NOTES
+	===========================================================================
+	 Created with: 	Virtual Studio Code
+	 Created on:   	26/01/2019 21:31
+	 Created by:   	Chaos4455 	
+	===========================================================================
+	.DESCRIÇÃO
+		Este arquivo possui um exemplo de como executar a abertura de um arquivo .db no software everything
+#>
+
+c:\Program Files\Everything\Everything.exe -read-only  -db C:\Everything.db  

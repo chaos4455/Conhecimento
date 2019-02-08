@@ -1,0 +1,12 @@
+<#	
+	.NOTES
+	===========================================================================
+	 Created with: 	Virtual Studio Code
+	 Created on:   	26/01/2019 21:31
+	 Created by:   	Chaos4455 	
+	===========================================================================
+	.DESCRIÇÃO
+		Este é um exemplo de comando do youtube-dl para executar o donwload de uma playlist em ambiente shell 
+#>
+
+youtube-dl -ciwt https://www.youtube.com/playlist?list=PLHY1RdD8zQjr0TwwZdJhqazA_I6r-gxx2
