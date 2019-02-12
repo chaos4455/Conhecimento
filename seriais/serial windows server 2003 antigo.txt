@@ -1,0 +1,12 @@
+<#	
+	.NOTES
+	===========================================================================
+	 Created with: 	Virtual Studio Code
+	 Created on:   	26/01/2019 21:31
+	 Created by:   	Chaos4455 	
+	===========================================================================
+	.DESCRIÇÃO
+		Este arquivo possui uma chave de instalação do windows server 2003 enterprise
+#>
+
+Serial Windows 2003 Server Enterprise Edition. JK6JC-P7P7H-4HRFC-3XM7P- G33HM
