@@ -1,0 +1,13 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	20/02/2019 16:09
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo exemplifica a execução do cmd remoto através do PSEXEC e pstools com usuário administrador
+############################################################################
+
+
+c:\PSTOOLS>PSEXEC -u administrador -p senha \\10.10.10.10 -s cmd -u

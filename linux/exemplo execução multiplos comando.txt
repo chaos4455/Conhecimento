@@ -1,0 +1,13 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	20/02/2019 16:09
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo possui um exemplo funcional de como chamar vários scritps no linux em sequência
+############################################################################
+
+
+./script2.sh && ./script3.sh && ./script4.sh

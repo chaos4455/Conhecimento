@@ -1,0 +1,13 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	20/02/2019 16:09
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo mostra o caminho do arquivos de source lists no debian e ubuntu
+############################################################################
+
+
+PICO /etc/apt/sources.list

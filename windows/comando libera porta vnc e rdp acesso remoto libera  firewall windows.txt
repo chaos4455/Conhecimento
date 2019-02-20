@@ -1,0 +1,17 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	20/02/2019 16:09
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo possui referência sobre como executar a liberação de portas no firewall do windows de modo remoto via CMD e PSEXEC
+############################################################################
+
+
+netsh advfirewall firewall add rule name="UltraVNC" protocol=TCP localport=5900 action=allow dir=IN
+
+netsh advfirewall firewall add rule name="ACESSO REMOTO 3389" protocol=TCP localport=3389 action=allow dir=IN
+
+PSEXEC -u administrador -p SENHA \\192.168.0.222 -s cmd -u

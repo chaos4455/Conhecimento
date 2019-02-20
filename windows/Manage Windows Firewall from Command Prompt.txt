@@ -1,0 +1,30 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	20/02/2019 16:09
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo possui orientação de como gerenciar os serviços de firewall do windows de modo local ou remoto via CMD com foco nos serviços de área de trabalha remota RDP
+############################################################################
+
+
+netsh advfirewall show allprofiles
+
+--
+
+netsh advfirewall set privateprofile state off
+
+--
+
+Open Port in Firewall using Command Line
+
+>> 
+
+netsh advfirewall firewall add rule name="Open Remote Desktop" protocol=TCP dir=in localport=3389 action=allow
+
+abrir range de portas >>
+
+netsh advfirewall firewall add rule name="UDP ports" protocol=UDP dir=out localport=6000-7000 action=allow
+

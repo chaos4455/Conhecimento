@@ -1,0 +1,20 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	20/02/2019 16:09
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo orienta sobre como resolver o problema de dpkg lock no debian e ubuntu
+############################################################################
+
+
+For 12.04 and newer:
+You can delete the lock file with the following command:
+
+sudo rm /var/lib/apt/lists/lock
+
+You may also need to delete the lock file in the cache directory
+
+sudo rm /var/cache/apt/archives/lock

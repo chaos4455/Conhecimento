@@ -1,0 +1,12 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	20/02/2019 16:09
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo mostra um exemplo de como executar a instalação de um pacote .msi no modo silencioso
+############################################################################
+
+pacote.msi /quiet

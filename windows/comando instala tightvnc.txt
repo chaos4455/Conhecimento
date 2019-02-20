@@ -1,0 +1,12 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	20/02/2019 16:09
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo possui referência de como executar a instalação do VNC server no Windows via pacote .msi
+############################################################################
+
+VNC-Server-6.4.0-Windows-en-64bit.msi /quiet /passive

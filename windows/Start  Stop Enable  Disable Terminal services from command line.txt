@@ -1,0 +1,29 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	20/02/2019 16:09
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo mostra como gerenciar remotamente e ativar o acesso a área de trabalha remota via cmd 
+############################################################################
+
+
+net start TermService
+
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v TSEnabled /t REG_DWORD /d 1 /f
+
+---
+
+
+find process >
+
+tasklist /svc | findstr /C:TermService
+
+>>
+
+sc config TermService start= disabled
+
+sc config TermService start= auto
+

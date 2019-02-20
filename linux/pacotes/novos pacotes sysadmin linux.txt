@@ -1,0 +1,34 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	20/02/2019 16:09
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo possui comandos de instalação de alguns pacotes básicos para sysadmin e monitoramento no linux, server ou desktops
+############################################################################
+
+disk io monitor
+apt-get install iotop
+
+
+--
+
+nethogs  monitora rede por processo
+apt-get install nethogs
+
+
+--
+
+
+Nmon: Monitor Linux Performance 
+apt-get install nmon
+
+--
+
+ntopng - monitoramento de rede via browser 
+apt-get install ntopng
+ip:3000
+admin admin
+

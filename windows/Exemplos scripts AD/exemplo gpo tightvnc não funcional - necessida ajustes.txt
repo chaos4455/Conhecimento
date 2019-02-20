@@ -1,0 +1,23 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	20/02/2019 16:09
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo possui um exemplo de script bat para instalação do tight vnc via GPO ou script de login no windows
+############################################################################
+
+@ECHO OFF
+
+if exist "C:\Program Files (x86)\TightVNC" goto :eof ELSE
+if exist "C:\Program Files\TightVNC" goto :eof ELSE
+
+regedit /S "\\myfileserver\share\TightVNC\TVNC_Reg_Key.reg"
+msiexec /i "\\myfileserver\share﻿\TightVNC\tightvnc-2.7.10-setup-32bit.msi" /quiet /norestart
+
+net stop "TightVNC Server"
+﻿net start "TightVNC Server"
+
+rmdir /s /q "C:\Users\All Users\Start Menu\Programs\TightVNC\"﻿﻿

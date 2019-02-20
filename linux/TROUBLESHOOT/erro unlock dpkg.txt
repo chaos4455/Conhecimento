@@ -1,0 +1,17 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	20/02/2019 16:09
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo possui orientação sobre resolução do erro do DPKG lock
+############################################################################
+
+
+Unlock the dpkg � (message /var/lib/dpkg/lock)
+
+sudo fuser -vki /var/lib/dpkg/lock
+
+sudo dpkg �configure -a

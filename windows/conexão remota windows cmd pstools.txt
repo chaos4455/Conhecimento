@@ -1,0 +1,12 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	20/02/2019 16:09
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo possui orientação sobre como executar uma chamada de comando remoto via cmd através do comando PSEXEC do PStools
+############################################################################
+
+PSEXEC -u administrador -p SENHA \\192.168.0.131 -s cmd -u

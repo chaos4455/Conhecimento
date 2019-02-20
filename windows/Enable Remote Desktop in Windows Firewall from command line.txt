@@ -1,0 +1,33 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	20/02/2019 16:09
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo descreve como fazer a ativação e liberação das portas de acesso remoto e do serviço de acesso remoto no windowws via CMD
+############################################################################
+
+
+Libera��o remote desktop
+
+
+set rule group="remote desktop" new enable=Yes 
+opens port 3389 
+
+netsh firewall set service type = remotedesktop mode = enable
+
+_______________________________________________________________
+
+netsh.exe advfirewall firewall add rule name="Remote Desktop - User Mode (TCP-In)" dir=in action=allow program="%%SystemRoot%%\system32\svchost.exe" service="TermService" description="Inbound rule for the Remote Desktop service to allow RDP traffic. [TCP 3389] added by LogicDaemon's script" enable=yes profile=private,domain localport=3389 protocol=tcp
+netsh.exe advfirewall firewall add rule name="Remote Desktop - User Mode (UDP-In)" dir=in action=allow program="%%SystemRoot%%\system32\svchost.exe" service="TermService" description="Inbound rule for the Remote Desktop service to allow RDP traffic. [UDP 3389] added by LogicDaemon's script" enable=yes profile=private,domain localport=3389 protocol=udp
+
+__________________________________________________________________
+
+FUNCIONAL 
+
+netsh firewall set service type = remotedesktop mode = enable
+
+REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f
+

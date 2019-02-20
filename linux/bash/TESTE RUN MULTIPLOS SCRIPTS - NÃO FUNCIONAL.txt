@@ -1,0 +1,43 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	20/02/2019 16:09
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo possui exemplo não funcional de como executar scripts e comandos sequenciais no linux
+############################################################################
+
+
+nohup bash script1.sh &
+nohup bash script2.sh &
+nohup bash script3.sh &
+
+
+nohup bash script{1..3}.sh &
+
+
+--
+
+APT-GET INSTALL PARALLEL
+
+
+parallel -j0 bash :::: <(ls script{1..3}.sh)
+
+parallel -j0 bash ::: script{1..3}.sh
+
+--
+
+nohup bash script1.sh & nohup bash script2.sh & nohup bash script3.sh &
+
+>> 
+
+cat script.sh
+#!/usr/bin/env bash
+script1.sh &
+script2.sh &
+script3.sh &
+$ nohup script.sh &
+
+______________________________________________

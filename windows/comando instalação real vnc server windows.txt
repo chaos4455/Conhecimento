@@ -1,0 +1,22 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	20/02/2019 16:09
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo possui exemplos de comandos para chamar a execução do pacote msi do VNC server para windows
+############################################################################
+
+
+
+C:\Users\elias.andrade\Downloads>VNC-Server-6.4.0-Windows-en-64bit.msi /quiet
+
+C:\Users\elias.andrade\Downloads>VNC-Server-6.4.0-Windows-en-64bit.msi /quiet
+
+C:\Users\elias.andrade\Downloads>VNC-Server-6.4.0-Windows-en-64bit.msi /s /y
+
+C:\Users\elias.andrade\Downloads>VNC-Server-6.4.0-Windows-en-64bit.msi /quiet /passive
+
+C:\Users\elias.andrade\Downloads>

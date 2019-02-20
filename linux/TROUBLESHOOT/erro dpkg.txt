@@ -1,0 +1,21 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	20/02/2019 16:09
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo possui orientação sobre como reinstalar o DPKG e suas dependências
+############################################################################
+
+
+sudo apt-get update �fix-missing
+
+and
+
+sudo dpkg �configure -a
+
+and
+
+sudo apt-get install -f

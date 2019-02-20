@@ -1,0 +1,15 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	20/02/2019 16:09
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo possui informação de como executar a instalação do Remmina remote desktop para linux
+############################################################################
+
+
+sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
+sudo apt-get update
+sudo apt-get install remmina remmina-plugin-rdp libfreerdp-plugins-standard

@@ -1,0 +1,12 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	20/02/2019 16:09
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo possui informação sobre a instalação do tightvnc no windows via comando remoto ou script via rede
+############################################################################
+
+msiexec.exe /i "\\servidor\arquivos\tightvnc-2.7.10-setup-32bit.msi" /quiet /norestart SET_USEVNCAUTHENTICATION=1	VALUE_OF_USEVNCAUTHENTICATION=1 SET_PASSWORD=1 VALUE_OF_PASSWORD=*YeahRight* SET_USECONTROLAUTHENTICATION=1 VALUE_OF_USECONTROLAUTHENTICATION=1 SET_CONTROLPASSWORD=1 VALUE_OF_CONTROLPASSWORD=*YeahRight*

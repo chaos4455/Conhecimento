@@ -1,0 +1,13 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	20/02/2019 16:09
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo possui orientação de como instalar o mintupdate no linux mint e fazer o upgrade de versão 
+############################################################################
+
+
+mintupdate-tool upgrade 

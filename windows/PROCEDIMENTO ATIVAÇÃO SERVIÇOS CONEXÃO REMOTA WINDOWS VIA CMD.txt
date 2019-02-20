@@ -1,0 +1,44 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	20/02/2019 16:09
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo descreve como realizar a ativação dos serviços de conexão remota no windows via CMD local ou remoto
+############################################################################
+
+
+PSEXEC \\192.168.0.131 -s cmd -u administrador -p senha
+
+net start TermService
+
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v TSEnabled /t REG_DWORD /d 1 /f
+
+net stop TermService
+
+net start TermService
+
+tasklist /svc | findstr /C:TermService
+
+sc config TermService start= auto
+
+net start RasAuto
+
+net start RasMan
+
+net start SessionEnv
+
+net start TermService
+
+net start UmRdpService
+
+net start RpcSs
+
+net start RpcLocator
+
+net stop mpssvc
+
+net start Wcmsvc
+

@@ -1,0 +1,47 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	20/02/2019 16:09
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo possui um guia de como instalar o VNC server no linux com uma sequência de comandos 
+############################################################################
+
+
+sudo passwd root
+
+senha
+
+apt-get update
+
+sudo apt-get -y remove vino
+sudo apt-get -y install x11vnc
+sudo mkdir /etc/x11vnc
+sudo x11vnc --storepasswd /etc/x11vnc/vncpwd
+
+senha
+
+
+pico /lib/systemd/system/x11vnc.service
+
+
+[Unit]
+Description=Start x11vnc at startup.
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/x11vnc -auth guess -forever -noxdamage -repeat -rfbauth /etc/x11vnc/vncpwd -rfbport 5900 -shared
+
+[Install]
+WantedBy=multi-user.target
+
+
+sudo systemctl daemon-reload 
+sudo systemctl enable x11vnc.service 
+sudo systemctl start x11vnc.service
+
+
+
