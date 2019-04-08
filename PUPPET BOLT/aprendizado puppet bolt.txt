@@ -1,0 +1,57 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Visual Studio Code
+# Created on:   	08/04/2019 09:24
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo mostra os comandos básicos no aprendizado do uso do puppet bolt  e sua instalação no linux 
+############################################################################
+
+puppet est� instalado no hyper-v vm ubuntu deploy feito via vagrant 
+
+j� tem senha setada e ssh definido
+vagrant  senha
+su senha
+loga tamb�m com chave privada
+192.168.0.119
+
+>>
+
+primeiros comandos com o puppet >>
+
+instala http://launchpadlibrarian.net/130794928/libc6_2.17-0ubuntu4_amd64.deb
+libc6_2.17-0ubuntu4_amd64.deb
+
+instala > sudo dpkg -i ipts 
+
+--- bolt ficou funcional >>
+
+>>>>>>>>>>>>>>>>>>>>>>> primeiro comando falhou por falta de autentica��o
+
+root@precise64:/home/vagrant# bolt command run "apt-get update"  --nodes 192.168.0.42
+Started on 192.168.0.42...
+Failed on 192.168.0.42:
+  Host key verification failed for 192.168.0.42: fingerprint SHA256:K+UAB89rfL1NIc3ZCFNtL3I5FCI+6oiLALQgJ4hdhq0 is unknown for "192.168.0.42"
+Failed on 1 node: 192.168.0.42
+Ran on 1 node in 0.12 seconds
+root@precise64:/home/vagrant#
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Comando funcional para autentica��o primaria com login depois escala��o com root >>
+
+bolt command run "apt-get update" -u usuario -p senha --run-as root --sudo-password senha  --nodes 192.168.42 --no-host-key-check -c 1 (adiciona execu��o uma por vez -c 1)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+Feito apt-get update
+
+feito apt-get install htop
+
+feito apt-get install iftop
+
+--
+

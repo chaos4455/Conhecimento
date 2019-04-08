@@ -1,4 +1,4 @@
-#	
+﻿#	
 # Notas
 #===========================================================================
 # Created with: 	Virtual Studio Code
@@ -10,7 +10,7 @@
 ############################################################################
 
 
-Libera��o remote desktop
+Liberação remote desktop
 
 
 set rule group="remote desktop" new enable=Yes 

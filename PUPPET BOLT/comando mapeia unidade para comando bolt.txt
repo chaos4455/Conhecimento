@@ -1,0 +1,13 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Visual Studio Code
+# Created on:   	08/04/2019 09:24
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo mostra como mapear uma unidade de rede windows no linux mint
+############################################################################
+
+mkdir /mnt/recursos
+sudo mount //192.168.0.205/recursos /mnt/recursos

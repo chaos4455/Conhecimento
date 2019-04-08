@@ -1,0 +1,2 @@
+net start MpsSvc
+net stop MpsSvc

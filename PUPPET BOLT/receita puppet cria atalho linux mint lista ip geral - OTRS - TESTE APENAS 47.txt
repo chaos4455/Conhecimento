@@ -1,0 +1,5 @@
+bolt command run "mkdir /mnt/publico" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47 --no-host-key-check 
+
+bolt command run "sudo mount -t cifs -o "domain=medicinal,username=elias.andrade,password=Femsa@2018,sec=ntlm,vers=1.0" //192.168.0.203/publico/TI/recursos /mnt/publico" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47 --no-host-key-check
+
+bolt command run "cp /mnt/publico/otrs.sh /etc/profile.d" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47 --no-host-key-check 

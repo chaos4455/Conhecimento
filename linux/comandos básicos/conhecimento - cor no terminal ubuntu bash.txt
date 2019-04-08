@@ -1,0 +1,29 @@
+pico $HOME/.bashrc ou pico ~/.bashrc
+
+inserir os comandos :
+
+function fgtab {
+  echo "tput setf/setb - Foreground/Background table"
+  for f in {0..7}; do
+    for b in {0..7}; do
+      echo -en "$(tput setf $f)$(tput setb $b) $f/$b "
+    done
+    echo -e "$(tput sgr 0)"
+  done
+}
+
+# The prompt in a somewhat Terminal -type independent manner:
+cname="$(tput setf 3)"
+csgn="$(tput setf 4)"
+chost="$(tput setf 2)"
+cw="$(tput setf 6)"
+crst="$(tput sgr 0)"
+PS1="\[${cname}\]\u\[${csgn}\]@\[${chost}\]\h:\[${cw}\]\w\[${csgn}\]\$\[${crst}\] "
+
+
+--
+executar
+
+
+source ~/.bashrc
+

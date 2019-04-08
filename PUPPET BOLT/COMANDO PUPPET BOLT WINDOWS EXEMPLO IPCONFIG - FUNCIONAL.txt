@@ -1,0 +1,13 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Visual Studio Code
+# Created on:   	08/04/2019 09:24
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo mostra como executar um comando no windows via WinRm através do puppet bolt
+############################################################################
+
+
+bolt command run --nodes winrm://10.10.10.10 -u usuario -p senha --no-host-key-check --no-ssl ipconfig

@@ -1,0 +1,9 @@
+bolt command run "reboot" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.29,192.168.0.30,192.168.0.31,192.168.0.32,192.168.0.33,192.168.0.36,192.168.0.38,192.168.0.40,192.168.0.42,192.168.0.45,192.168.0.92 --no-host-key-check 
+
+bolt command run "reboot" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.48,192.168.0.51,192.168.0.52,192.168.0.53,192.168.0.55,192.168.0.57,192.168.0.60,192.168.0.62,192.168.0.64,192.168.0.66,192.168.0.47 --no-host-key-check 
+
+bolt command run "reboot" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.70,192.168.0.71,192.168.0.75,192.168.0.76,192.168.0.78,192.168.0.79,192.168.0.82,192.168.0.84,192.168.0.87,192.168.0.89,192.168.0.67 --no-host-key-check 
+
+bolt command run "reboot" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.101,192.168.0.110,192.168.0.134,192.168.0.135,192.168.0.141,192.168.0.152,192.168.0.181,192.168.0.184,192.168.0.189 --no-host-key-check 
+
+

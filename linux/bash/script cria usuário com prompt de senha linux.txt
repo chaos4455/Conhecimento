@@ -1,0 +1,11 @@
+#!/bin/sh
+echo -n "Enter username: "
+read uname
+
+echo -n "Enter password: "
+read -s passwd
+
+adduser "$uname"
+echo $uname:$passwd | sudo chpasswd
+
+gpasswd wheel -a $uname

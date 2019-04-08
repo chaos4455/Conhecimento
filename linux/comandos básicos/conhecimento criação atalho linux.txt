@@ -1,0 +1,44 @@
+~/Desktop  é a variável para desktop do usuário 
+
+cp arquivo ~/Desktop  copia o arquivo para o desktop do usuário...
+
+--- 
+
+script puppet bolt funcional >>
+
+bolt command run "mkdir /mnt/publico" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47 --no-host-key-check -c 1
+
+bolt command run "sudo mount -t cifs -o "domain=medicinal,username=elias.andrade,password=Femsa@2018,sec=ntlm,vers=1.0" //192.168.0.203/publico/TI/recursos /mnt/publico" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47 --no-host-key-check -c 1
+
+bolt command run "cp /mnt/publico/meuip.sh /etc/profile.d" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47 --no-host-key-check -c 1
+
+
+
+________________________________________________________________________________________________________________________________________________
+
+#Essa parte não precisa pois o usuário vai correr um script no login apenas para copiar ( cp /mnt/publico/MEU-IP.DESKTOP ~/Desktop )
+
+bolt command run "cp /mnt/publico/meuip.sh /etc/profile.d" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47 --no-host-key-check -c 1
+_________________________________________________________________________________________________________________________________________________________________
+
+SCRIPT BOLT TESTES>>
+
+Correr no bolt para preparar enviroinment > 
+
+bolt command run "mkdir /mnt/publico" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47 --no-host-key-check -c 1
+
+bolt command run "sudo mount -t cifs -o "domain=medicinal,username=elias.andrade,password=Femsa@2018,sec=ntlm,vers=1.0" //192.168.0.203/publico/TI/recursos /mnt/publico" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47 --no-host-key-check -c 1
+
+
+programar script manual para rodar em todos os login > 
+
+cp /mnt/publico/MEU-IP.DESKTOP ~/Desktop
+
+
+(testar agora um script para todos os login que execute apenas cp /mnt/publico/MEU-IP.DESKTOP ~/Desktop )
+
+teste >>
+
+criado um script chamado meuip.sh em /etc/profile
+(resultado : deu certo! )
+

@@ -1,0 +1,3 @@
+para criar um comando no linux basta deixar o arquivo executavel ou script direto no caminho /usr/local/bin/pasta ou direto no /usr/local/bin
+com isso posso criar scritps para baixar algo, criar pasta, mover ou copiar e depois executar....
+

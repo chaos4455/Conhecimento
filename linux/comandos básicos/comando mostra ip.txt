@@ -1,0 +1,15 @@
+hostname -I
+
+caminho atalhos
+
+/etc/skel/Desktop
+
+criar atalhos aqui
+
+>>>
+
+comando puppet bolt >>
+
+teste do endereço ip está sedo feita na ip 42 e na ip 103 -  andressa máquina antiga pos vendas e também pc marketing linux
+
+

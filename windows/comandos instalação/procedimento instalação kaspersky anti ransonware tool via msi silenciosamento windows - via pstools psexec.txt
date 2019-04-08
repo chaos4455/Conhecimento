@@ -1,0 +1,4 @@
+PSEXEC -u administrador -p Med@2018! \\192.168.0.59 -s cmd
+
+
+msiexec.exe /i "\\192.168.0.203\publico\TI\anti_ransom_installer 3.msi" /qn

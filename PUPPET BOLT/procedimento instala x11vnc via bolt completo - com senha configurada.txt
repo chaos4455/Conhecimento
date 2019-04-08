@@ -1,0 +1,85 @@
+processo vnc original >>
+
+sudo passwd root
+sudo passwd medicinal
+
+Med@2018!
+
+apt-get update
+
+sudo apt-get -y remove vino
+sudo apt-get -y install x11vnc
+sudo mkdir /etc/x11vnc
+sudo x11vnc --storepasswd /etc/x11vnc/vncpwd
+
+Med@2018!
+
+pico /lib/systemd/system/x11vnc.service
+
+[Unit]
+Description=Start x11vnc at startup.
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/x11vnc -auth guess -forever -noxdamage -repeat -rfbauth /etc/x11vnc/vncpwd -rfbport 5900 -shared
+
+[Install]
+WantedBy=multi-user.target
+
+sudo systemctl daemon-reload
+sudo systemctl enable x11vnc.service
+sudo systemctl start x11vnc.service
+
+--
+comando teste no lab 47 
+
+bolt command run "apt-get update" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47 --no-host-key-check -c 1
+
+bolt command run "sudo apt-get -y remove vino" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47 --no-host-key-check -c 1
+
+bolt command run "sudo apt-get -y install x11vnc" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47 --no-host-key-check -c 1
+
+bolt command run "sudo mkdir /etc/x11vnc" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47 --no-host-key-check -c 1
+
+bolt command run "mkdir /mnt/publico " -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47 --no-host-key-check -c 1
+
+bolt command run "sudo mount -t cifs -o "domain=medicinal,username=elias.andrade,password=Femsa@2018,sec=ntlm,vers=1.0" //192.168.0.203/publico/TI/recursos /mnt/publico" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47 --no-host-key-check -c 1
+
+bolt command run "rm /etc/x11vnc/vncpwd" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47 --no-host-key-check -c 1
+
+bolt command run "rm /lib/systemd/system/x11vnc.service" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47 --no-host-key-check -c 1
+
+bolt command run "cp /mnt/publico/vncpwd /etc/x11vnc" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47 --no-host-key-check -c 1
+
+bolt command run "cp /mnt/publico/x11vnc.service /lib/systemd/system/" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47 --no-host-key-check -c 1
+
+bolt command run "sudo systemctl daemon-reload" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47 --no-host-key-check -c 1
+
+bolt command run "sudo systemctl enable x11vnc.service" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47 --no-host-key-check -c 1
+
+bolt command run "sudo systemctl start x11vnc.service" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47 --no-host-key-check -c 1
+
+
+
+## comando agora para ser disparado para todos os hosts 
+
+#apenas para consulta >>
+
+
+comando funcional >>
+
+
+bolt command run "mkdir /mnt/publico " -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.47,192.168.0.29,192.168.0.30,192.168.0.31,192.168.0.32,192.168.0.33,192.168.0.36,192.168.0.38,192.168.0.39,192.168.0.40,192.168.0.42,192.168.0.45,192.168.0.48,192.168.0.51,192.168.0.52,192.168.0.53,192.168.0.55,192.168.0.57,192.168.0.60,192.168.0.62,192.168.0.64,192.168.0.66,192.168.0.67,192.168.0.68,192.168.0.70,192.168.0.71,192.168.0.75,192.168.0.76,192.168.0.78,192.168.0.79,192.168.0.82,192.168.0.84,192.168.0.87,192.168.0.89,192.168.0.90,192.168.0.92,192.168.0.103,192.168.0.105,192.168.0.112,192.168.0.124,192.168.0.145,192.168.0.149,192.168.0.159,192.168.0.169 --no-host-key-check -c 1
+
+
+>> pegar essa parte como esboço para montar o script de cima >>
+
+bolt command run "mkdir /mnt/publico " -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.29,192.168.0.30,192.168.0.31,192.168.0.32,192.168.0.33,192.168.0.36,192.168.0.38,192.168.0.39,192.168.0.40,192.168.0.42,192.168.0.45,192.168.0.48,192.168.0.51,192.168.0.52,192.168.0.53,192.168.0.55,192.168.0.57,192.168.0.60,192.168.0.62,192.168.0.64,192.168.0.66,192.168.0.67,192.168.0.68,192.168.0.70,192.168.0.71,192.168.0.75,192.168.0.76,192.168.0.78,192.168.0.79,192.168.0.82,192.168.0.84,192.168.0.87,192.168.0.89,192.168.0.90,192.168.0.92,192.168.0.103,192.168.0.105,192.168.0.112,192.168.0.124,192.168.0.145,192.168.0.149,192.168.0.159,192.168.0.169 --no-host-key-check -c 1
+
+bolt command run "sudo mount -t cifs -o "domain=medicinal,username=elias.andrade,password=Femsa@2018,sec=ntlm,vers=1.0" //192.168.0.203/publico /mnt/publico" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.29,192.168.0.30,192.168.0.31,192.168.0.32,192.168.0.33,192.168.0.36,192.168.0.38,192.168.0.39,192.168.0.40,192.168.0.42,192.168.0.45,192.168.0.48,192.168.0.51,192.168.0.52,192.168.0.53,192.168.0.55,192.168.0.57,192.168.0.60,192.168.0.62,192.168.0.64,192.168.0.66,192.168.0.67,192.168.0.68,192.168.0.70,192.168.0.71,192.168.0.75,192.168.0.76,192.168.0.78,192.168.0.79,192.168.0.82,192.168.0.84,192.168.0.87,192.168.0.89,192.168.0.90,192.168.0.92,192.168.0.103,192.168.0.105,192.168.0.112,192.168.0.124,192.168.0.145,192.168.0.149,192.168.0.159,192.168.0.169 --no-host-key-check -c 1
+
+bolt command run "rm /usr/share/backgrounds/linuxmint/default_background.jpg" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.29,192.168.0.30,192.168.0.31,192.168.0.32,192.168.0.33,192.168.0.36,192.168.0.38,192.168.0.39,192.168.0.40,192.168.0.42,192.168.0.45,192.168.0.48,192.168.0.51,192.168.0.52,192.168.0.53,192.168.0.55,192.168.0.57,192.168.0.60,192.168.0.62,192.168.0.64,192.168.0.66,192.168.0.67,192.168.0.68,192.168.0.70,192.168.0.71,192.168.0.75,192.168.0.76,192.168.0.78,192.168.0.79,192.168.0.82,192.168.0.84,192.168.0.87,192.168.0.89,192.168.0.90,192.168.0.92,192.168.0.103,192.168.0.105,192.168.0.112,192.168.0.124,192.168.0.145,192.168.0.149,192.168.0.159,192.168.0.169 --no-host-key-check -c 1
+
+bolt command run "cp /mnt/publico/TI/Recursos/default_background.jpg /usr/share/backgrounds/linuxmint/" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.29,192.168.0.30,192.168.0.31,192.168.0.32,192.168.0.33,192.168.0.36,192.168.0.38,192.168.0.39,192.168.0.40,192.168.0.42,192.168.0.45,192.168.0.48,192.168.0.51,192.168.0.52,192.168.0.53,192.168.0.55,192.168.0.57,192.168.0.60,192.168.0.62,192.168.0.64,192.168.0.66,192.168.0.67,192.168.0.68,192.168.0.70,192.168.0.71,192.168.0.75,192.168.0.76,192.168.0.78,192.168.0.79,192.168.0.82,192.168.0.84,192.168.0.87,192.168.0.89,192.168.0.90,192.168.0.92,192.168.0.103,192.168.0.105,192.168.0.112,192.168.0.124,192.168.0.145,192.168.0.149,192.168.0.159,192.168.0.169 --no-host-key-check -c 1
+

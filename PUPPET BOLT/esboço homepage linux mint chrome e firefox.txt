@@ -1,0 +1,27 @@
+C:\Arquivos de Programas\Google\Chrome\Application\master_preferences
+
+master_preferences
+
+
+-- ^^^esse de cima só funciona para windows... para novas estações..
+
+____________ linux >>
+
+
+
+google chrome:
+
+~/.config/google-chrome/Default/Preferences
+
+chromium:
+
+~/.config/chromium/Default/Preferences
+
+- Instalar o Chromium
+	- sudo apt-get install chromium-browser
+	- sudo apt-get install libnss3
+
+--
+
+
+

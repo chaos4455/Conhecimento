@@ -1,0 +1,3 @@
+C:\ msg /server:<server_name> "mensagem"
+
+C:'msg /server:servidor_205 elias.andrade "Escreva aqui sua mensagem" 

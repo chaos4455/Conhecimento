@@ -1,0 +1,8 @@
+sudo fuser -cuk /var/lib/dpkg/lock
+sudo rm -f /var/lib/dpkg/lock
+sudo fuser -cuk /var/cache/apt/archives/lock
+sudo rm -f /var/cache/apt/archives/lock
+
+
+sudo rm /var/lib/apt/lists/* -vf
+sudo apt-get update

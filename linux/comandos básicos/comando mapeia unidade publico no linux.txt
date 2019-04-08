@@ -1,0 +1,2 @@
+mkdir /mnt/publico // 
+sudo mount -t cifs -o "domain=medicinal,username=elias.andrade,password=Femsa@2018,sec=ntlm,vers=1.0" //192.168.0.203/publico /mnt/publico

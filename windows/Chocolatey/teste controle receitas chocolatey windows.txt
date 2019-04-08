@@ -1,0 +1,13 @@
+script ps tools
+cd c:\pstools
+
+PSEXEC -u administrador -p Med@2018! \\192.168.0.59 -s cmd
+
+Comando instala chocolatey 
+@powershell -NoProfile -ExecutionPolicy Bypass -Command "[System.Net.WebRequest]::DefaultWebProxy.Credentials = [System.Net.CredentialCache]::DefaultCredentials; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
+
+
+--
+
+choco install winrar
+

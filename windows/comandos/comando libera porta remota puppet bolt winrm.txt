@@ -1,0 +1,6 @@
+PSEXEC -u administrador -p Med@2018! \\192.168.0.131 -s cmd -u
+
+netsh advfirewall firewall add rule name="PUPPET BOLT WINRM" protocol=TCP localport=5986 action=allow dir=IN
+
+netsh advfirewall firewall add rule name="PUPPET BOLT WINRM" protocol=TCP localport=5986 action=allow dir=IN
+

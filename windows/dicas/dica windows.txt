@@ -1,0 +1,1 @@
+digitar cmd ou powershell na barra de endereços vai abrir o powershell ou cmd no diretório aberto.

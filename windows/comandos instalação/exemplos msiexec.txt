@@ -1,0 +1,1 @@
+msiexec.exe /i "C:\Example.msi" /qn

@@ -1,0 +1,4 @@
+wget https://apt.puppet.com/puppet6-release-trusty.deb
+sudo dpkg -i puppet6-release-trusty.deb
+sudo apt-get update 
+sudo apt-get install puppet-bolt

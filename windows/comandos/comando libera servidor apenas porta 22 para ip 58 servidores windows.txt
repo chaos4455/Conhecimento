@@ -1,0 +1,24 @@
+netsh advfirewall firewall add rule name="ACESSO REMOTO 22 - 58" protocol=TCP localport=22 action=allow dir=IN remoteip=192.168.0.58
+netsh advfirewall firewall add rule name="ACESSO REMOTO 22 - 58" protocol=TCP localport=22 action=allow dir=OUT remoteip=192.168.0.58
+netsh advfirewall firewall add rule name="ACESSO REMOTO 22 - 125" protocol=TCP localport=22 action=block dir=IN remoteip=192.168.0.125
+netsh advfirewall firewall add rule name="ACESSO REMOTO 22 - 125" protocol=TCP localport=22 action=block dir=OUT remoteip=192.168.0.125
+
+
+net stop MpsSvc
+net sTART MpsSvc
+
+PSEXEC -u administrador -p Med@2018! \\192.168.0.131 -s cmd -u
+
+Para powershell >> 
+
+New-NetFirewallRule -Name Acessoremoto22allow -DisplayName 'Acesso remoto 22' -Enabled True -Direction Inbound -Protocol ANY -Action Allow -Profile ANY -RemoteAddress 192.168.0.58
+
+Teste deny any >> 
+
+New-NetFirewallRule -Name Acessoremoto22block -DisplayName 'Acesso remoto 22 block' -Enabled True -Direction Inbound -Protocol ANY -Action Block -Profile ANY -RemoteAddress ANY
+New-NetFirewallRule -Name Acessoremoto22block3 -DisplayName 'Acesso remoto 22 block' -Enabled True -Direction outbound -Protocol ANY -Action Block -Profile ANY -RemoteAddress ANY
+
+
+
+
+

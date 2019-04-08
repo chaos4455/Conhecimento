@@ -1,0 +1,5 @@
+sudo apt-get install -f
+sudo apt-get -f install && sudo dpkg --configure -a
+sudo dpkg --configure -a
+sudo rm /var/lib/apt/lists/* -vf
+sudo apt-get update

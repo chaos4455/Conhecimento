@@ -1,0 +1,59 @@
+gsettings get org.gnome.desktop.background picture-uri
+
+ vai retornar esse caminho do wallpaper
+
+'/usr/share/backgrounds/linuxmint/default_background.jpg'
+
+apagar esse wallpaper e puxar outro do servidor.... criar comando que faz esse apagamento e copia de outro arquivo...
+
+---
+
+teste bolt
+
+primeiro monta unidade publico recursos em mnt/publico
+
+mkdir /mnt/publico // 
+sudo mount -t cifs -o "domain=medicinal,username=elias.andrade,password=Femsa@2018,sec=ntlm,vers=1.0" //192.168.0.203/publico /mnt/publico
+
+
+depois apaga o wallpaper 
+
+rm /usr/share/backgrounds/linuxmint/default_background.jpg
+
+depois copia o novo arquivo...
+
+cp /mnt/publico/TI/Recursos/default_background.jpg /usr/share/backgrounds/linuxmint/
+
+
+
+comando muda o papel de parede 
+
+bolt command run "mkdir /mnt/publico " -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.29,192.168.0.30,192.168.0.31,192.168.0.32,192.168.0.33,192.168.0.36,192.168.0.38,192.168.0.39,192.168.0.40,192.168.0.42,192.168.0.45,192.168.0.48,192.168.0.51,192.168.0.52,192.168.0.53,192.168.0.55,192.168.0.57,192.168.0.60,192.168.0.62,192.168.0.64,192.168.0.66,192.168.0.67,192.168.0.68,192.168.0.70,192.168.0.71,192.168.0.75,192.168.0.76,192.168.0.78,192.168.0.79,192.168.0.82,192.168.0.84,192.168.0.87,192.168.0.89,192.168.0.90,192.168.0.92,192.168.0.103,192.168.0.105,192.168.0.112,192.168.0.124,192.168.0.145,192.168.0.149,192.168.0.159,192.168.0.169 --no-host-key-check -c 1
+
+bolt command run "sudo mount -t cifs -o "domain=medicinal,username=elias.andrade,password=Femsa@2018,sec=ntlm,vers=1.0" //192.168.0.203/publico /mnt/publico" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.29,192.168.0.30,192.168.0.31,192.168.0.32,192.168.0.33,192.168.0.36,192.168.0.38,192.168.0.39,192.168.0.40,192.168.0.42,192.168.0.45,192.168.0.48,192.168.0.51,192.168.0.52,192.168.0.53,192.168.0.55,192.168.0.57,192.168.0.60,192.168.0.62,192.168.0.64,192.168.0.66,192.168.0.67,192.168.0.68,192.168.0.70,192.168.0.71,192.168.0.75,192.168.0.76,192.168.0.78,192.168.0.79,192.168.0.82,192.168.0.84,192.168.0.87,192.168.0.89,192.168.0.90,192.168.0.92,192.168.0.103,192.168.0.105,192.168.0.112,192.168.0.124,192.168.0.145,192.168.0.149,192.168.0.159,192.168.0.169 --no-host-key-check -c 1
+
+bolt command run "rm /usr/share/backgrounds/linuxmint/default_background.jpg" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.29,192.168.0.30,192.168.0.31,192.168.0.32,192.168.0.33,192.168.0.36,192.168.0.38,192.168.0.39,192.168.0.40,192.168.0.42,192.168.0.45,192.168.0.48,192.168.0.51,192.168.0.52,192.168.0.53,192.168.0.55,192.168.0.57,192.168.0.60,192.168.0.62,192.168.0.64,192.168.0.66,192.168.0.67,192.168.0.68,192.168.0.70,192.168.0.71,192.168.0.75,192.168.0.76,192.168.0.78,192.168.0.79,192.168.0.82,192.168.0.84,192.168.0.87,192.168.0.89,192.168.0.90,192.168.0.92,192.168.0.103,192.168.0.105,192.168.0.112,192.168.0.124,192.168.0.145,192.168.0.149,192.168.0.159,192.168.0.169 --no-host-key-check -c 1
+
+bolt command run "cp /mnt/publico/TI/Recursos/default_background.jpg /usr/share/backgrounds/linuxmint/" -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.29,192.168.0.30,192.168.0.31,192.168.0.32,192.168.0.33,192.168.0.36,192.168.0.38,192.168.0.39,192.168.0.40,192.168.0.42,192.168.0.45,192.168.0.48,192.168.0.51,192.168.0.52,192.168.0.53,192.168.0.55,192.168.0.57,192.168.0.60,192.168.0.62,192.168.0.64,192.168.0.66,192.168.0.67,192.168.0.68,192.168.0.70,192.168.0.71,192.168.0.75,192.168.0.76,192.168.0.78,192.168.0.79,192.168.0.82,192.168.0.84,192.168.0.87,192.168.0.89,192.168.0.90,192.168.0.92,192.168.0.103,192.168.0.105,192.168.0.112,192.168.0.124,192.168.0.145,192.168.0.149,192.168.0.159,192.168.0.169 --no-host-key-check -c 1
+
+
+
+-- 
+
+teste em script.sh
+
+bolt script run -u elias.andrade -p Femsa@2018 --run-as root --sudo-password Med@2018!  --nodes 192.168.0.29,192.168.0.30,192.168.0.31,192.168.0.32,192.168.0.33,192.168.0.36,192.168.0.38,192.168.0.39,192.168.0.40,192.168.0.42,192.168.0.45,192.168.0.48,192.168.0.51,192.168.0.52,192.168.0.53,192.168.0.55,192.168.0.57,192.168.0.60,192.168.0.62,192.168.0.64,192.168.0.66,192.168.0.67,192.168.0.68,192.168.0.70,192.168.0.71,192.168.0.75,192.168.0.76,192.168.0.78,192.168.0.79,192.168.0.82,192.168.0.84,192.168.0.87,192.168.0.89,192.168.0.90,192.168.0.92,192.168.0.103,192.168.0.105,192.168.0.112,192.168.0.124,192.168.0.145,192.168.0.149,192.168.0.159,192.168.0.169 --no-host-key-check -c 1 script.sh
+
+
+mkdir /mnt/publico // 
+sudo mount -t cifs -o "domain=medicinal,username=elias.andrade,password=Femsa@2018,sec=ntlm,vers=1.0" //192.168.0.203/publico /mnt/publico //
+rm /usr/share/backgrounds/linuxmint/default_background.jpg //
+cp /mnt/publico/TI/Recursos/default_background.jpg /usr/share/backgrounds/linuxmint/
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+( em caso de erro de permissão quando chmod 777 usar " chmod -R 700 " para corrigir )
+
+ssh -i private_key vagrant@172.17.0.3
+
+
+^^
+
+este comando  de cima deve fazer o login auto dentro do servidor definido via ip desde que a chave esteja no caminho onde está 
+chamando o comando ssh

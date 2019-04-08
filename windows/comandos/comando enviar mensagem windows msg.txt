@@ -1,0 +1,6 @@
+msg elias.andrade oi me liga!
+
+
+PSEXEC -u administrador -p Senha \\Computador -s cmd 
+
+msg elias.andrade oi me liga!
