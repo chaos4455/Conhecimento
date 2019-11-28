@@ -1,0 +1,25 @@
+(considerar que o spark.deb já foi copiado do público mnt/publico)
+
+cd /home/arquivos
+
+instalar: dpkg -i spark_2_8_3.deb 
+
+pico /usr/share/applications/spark.desktop
+
+Incluir as seguintes linhas:
+
+[Desktop Entry]
+
+Name=Spark
+Version=2.8.2
+GenericName=Spark
+X-GNOME-FullName=Spark
+Comment=ignite realtime Spark IM client
+Type=Application
+Categories=Application;Internet;
+Path=/usr/bin
+Exec=/bin/bash spark
+Terminal=false
+StartupNotify=true
+Icon=/usr/share/spark/spark.png
+TargetEnvironment=Unity
